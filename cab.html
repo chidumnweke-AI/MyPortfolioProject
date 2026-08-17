@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCab Awka - Your Cab is Minutes Away</title>
+   
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #fff; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* NAVBAR */
+.navbar { background: #0a1e3a; color: white; padding: 18px 0; position: sticky; top: 0; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 22px; font-weight: 800; color: white; }
+.logo span { background: #ffc107; color: #0a1e3a; padding: 6px 12px; margin-right: 10px; border-radius: 5px; font-weight: 800; }
+.navbar nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; }
+.navbar nav a:hover { color: #ffc107; }
+.btn-call { background: #ffc107; color: #0a1e3a; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: 700; }
+.btn-call:hover { background: #ffda44; }
+
+/* HERO */
+.hero { background: linear-gradient(rgba(10,30,58,0.9), rgba(10,30,58,0.9)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070') center/cover; color: white; padding: 120px 0; text-align: center; }
+.tag { color: #ffc107; font-weight: 700; letter-spacing: 1px; }
+.hero h1 { font-size: 55px; font-weight: 800; margin: 15px 0; line-height: 1.2; }
+.hero h1 span { color: #ffc107; }
+.hero p { font-size: 18px; max-width: 600px; margin: 20px auto; }
+.btn { background: #ffc107; color: #0a1e3a; padding: 16px 35px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 18px; display: inline-block; }
+.btn:hover { background: #ffda44; transform: scale(1.05); }
+
+/* SERVICES BAR */
+.services-bar { background: #ffc107; color: #0a1e3a; padding: 15px 0; text-align: center; font-weight: 700; }
+
+/* SECTIONS */
+section { padding: 90px 0; }
+h2 { font-size: 36px; font-weight: 800; margin-bottom: 20px; color: #0a1e3a; }
+
+/* SERVICES GRID */
+.service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 40px; }
+.service-card { background: #f8f9fa; padding: 30px; border-left: 5px solid #ffc107; border-radius: 8px; }
+.service-card h3 { font-size: 20px; margin-bottom: 10px; }
+
+/* ABOUT */
+.about { background: #0a1e3a; color: white; }
+.about h2 { color: white; }
+.about p { font-size: 18px; }
+
+/* REVIEWS */
+.reviews { background: #f8f9fa; text-align: center; }
+.reviews blockquote { font-size: 28px; font-weight: 700; margin: 20px 0; color: #0a1e3a; }
+
+/* CONTACT */
+.contact { text-align: center; }
+
+/* FOOTER */
+footer { background: #0a1e3a; color: white; padding: 50px 0; text-align: center; }
+
+/* MOBILE */
+@media(max-width: 900px) {
+  .service-grid { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 40px; }
+  .navbar nav { display: none; }
+}
+@media(max-width: 600px) {
+  .service-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 32px; }
+}
+.contact-info {
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo animate">
+        <div class="logo-icon">Q</div>
+        <span>QUICKCAB AWKA</span>
+      </div>
+      <nav class="animate delay-1">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="tel:07037767499" class="btn-call animate delay-2">0703 776 7499</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="location-tag animate">AWKA - ANAMBRA STATE</p>
+      <h1 class="animate delay-1">YOUR CAB IS <br><span>MINUTES AWAY</span></h1>
+      <p class="hero-text animate delay-2">QuickCab Awka runs clean, metered-fair rides across Awka and Anambra State. One phone call, a driver you know by name, and a fare agreed before you move.</p>
+      <div class="hero-btns animate delay-3">
+        <a href="tel:07037767499" class="btn-primary pulse">BOOK A RIDE NOW →</a>
+        <a href="#contact" class="btn-secondary">FIND US</a>
+        <div class="rating">⭐ 5.0 rated</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES BAR -->
+  <div class="services-bar">
+    <div class="container">
+      <span>NIBO,</span>   <span>OKPUNO,</span>   <span>ASABA AIRPORT,</span>   <span>ENUGU AIRPORT,</span>   <span>AWKA,</span>   <span>IFITE,</span>   <span>AMAWBIA,</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="animate-on-scroll">WHAT WE DRIVE YOU <br>TO</h2>
+      <p class="subtext animate-on-scroll delay-1">Everyday transport for students, traders, families and business travellers moving in and out of Awka.</p>
+      <div class="service-grid">
+        <div class="service-card animate-on-scroll"><h3>🚖 City Rides</h3><p>Point-to-point trips across Awka — Ifite, Amansea, Aroma, Unizik, Eke Awka and beyond.</p></div>
+        <div class="service-card animate-on-scroll delay-1"><h3>✈️ Airport Transfers</h3><p>Scheduled runs to Asaba and Enugu airports with early-morning pickups on request.</p></div>
+        <div class="service-card animate-on-scroll delay-2"><h3>⏰ Hire by the Hour</h3><p>Keep a car and driver for meetings, site visits or a full day of errands.</p></div>
+        <div class="service-card animate-on-scroll delay-3"><h3>📦 Parcel Runs</h3><p>Send documents and small packages across town with a driver you can call directly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-img animate-on-scroll">
+        <img src="Screenshot (73).png" alt="">
+      </div>
+      <div class="about-text animate-on-scroll delay-1">
+        <h2>A LOCAL CAB SERVICE, <br>RUN LIKE IT MATTERS</h2>
+        <p>We booked QuickCab Awka on Ichide Street with one simple promise: pick up on time, drive carefully, and charge what we quoted. No haggling at the end of a trip, no vanishing drivers, no surprise detours.</p>
+        <p>Every car in the fleet is cleaned daily and checked before it goes out. Our drivers know Awka’s roads the way only locals can.</p>
+        <div class="stats">
+          <div class="stat animate-on-scroll"><h3 data-count="5">0</h3><p>CUSTOMER RATING</p></div>
+          <div class="stat animate-on-scroll delay-1"><h3>24/7</h3><p>PHONE BOOKINGS</p></div>
+          <div class="stat animate-on-scroll delay-2"><h3>Awka</h3><p>HOME BASE</p></div>
+          <div class="stat animate-on-scroll delay-3"><h3>Fixed</h3><p>AGREED FARES</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="container why-grid">
+      <div class="animate-on-scroll"><h4>On time, every time</h4><p>Call ahead or call now — we confirm a pickup window and keep to it.</p></div>
+      <div class="animate-on-scroll delay-1"><h4>Safe, vetted drivers</h4><p>Licensed, experienced and known in the community.</p></div>
+      <div class="animate-on-scroll delay-2"><h4>Awka inside out</h4><p>From Ichide Street to Amansea and every junction between.</p></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="container animate-on-scroll">
+      <h3>WHAT RIDERS SAY</h3>
+      <div class="stars">⭐ 5.0</div>
+      <blockquote>“Best cab service in Awka Anambra”</blockquote>
+      <p class="verified">VERIFIED RIDER - AWKA, ANAMBRA</p>
+    </div>
+    <img src="Screenshot (72).png" alt="Awka aerial" class="city-img">
+    <img src="Screenshot (71).png" alt="">
+    <img src="Screenshot (74).png" alt="">
+    <img src="Screenshot (75).png" alt="">
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container animate-on-scroll">
+      <h2>READY WHEN YOU ARE</h2>
+      <p>Call or send a message with your pickup point, destination and time. We confirm the fare before the car moves.</p>
+      <div class="contact-info">
+        <div><strong>📞 PHONE</strong><br>0703 776 7499</div>
+        <div><strong>📍 OFFICE</strong><br>No 20 Ichide Street, Awka 420001, Anambra</div>
+        <div><strong>🕒 HOURS</strong><br>Open daily - Early morning and late-night pickups on request</div>
+      </div>
+      <a href="tel:07037767499" class="btn-primary pulse">CALL 0703 776 7499 →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div><h4>QUICKCAB AWKA</h4><p>No 20 Ichide Street, Awka 420001, Anambra</p></div>
+      <div><a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </div>
+      <div><p>0703 776 7499</p></div>
+    </div>
+  </footer>
+
+
+
+
+<script>
+    const scrollBar = document.querySelector('.services-bar');
+    if(scrollBar) {
+      let scrollAmount = 0;
+      function autoScroll() {
+        scrollAmount += 1;
+        scrollBar.scrollLeft = scrollAmount;
+        if(scrollBar.scrollLeft >= scrollBar.scrollWidth - scrollBar.clientWidth) {
+          scrollAmount = 0;
+        }
+      }
+      setInterval(autoScroll, 30);
+      scrollBar.style.overflowX = 'hidden';
+      scrollBar.style.whiteSpace = 'nowrap';
+    }
+    
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.onclick = function(e) {
+        e.preventDefault();
+        let target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior: 'smooth'});
+      }
+    });
+    
+    window.onscroll = function() {
+      let nav = document.querySelector('.navbar');
+      if(nav) {
+        if (window.scrollY > 50) {
+          nav.style.padding = '10px 0';
+          nav.style.boxShadow = '0 5px 15px rgba(0,0,0,0.3)';
+          nav.style.transition = 'all 0.3s ease';
+        } else {
+          nav.style.padding = '18px 0';
+          nav.style.boxShadow = 'none';
+        }
+      }
+    };
+    
+    function fadeInOnScroll() {
+      document.querySelectorAll('.service-card, h2').forEach(el => {
+        let position = el.getBoundingClientRect().top;
+        if(position < window.innerHeight - 100) {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }
+      });
+    }
+    
+    document.querySelectorAll('.service-card, h2').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(40px)';
+      el.style.transition = 'all 0.8s ease';
+    });
+    window.addEventListener('scroll', fadeInOnScroll);
+    fadeInOnScroll();
+    
+    document.querySelectorAll('.btn, .btn-call').forEach(btn => {
+      btn.onmousedown = () => btn.style.transform = 'scale(0.95)';
+      btn.onmouseup = () => btn.style.transform = 'scale(1.05)';
+    });
+ </script>
+</body>
+</html>
